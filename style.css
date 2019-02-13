@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-family: "Luckiest Guy", cursive;
+}
+
+h1 {
+  color: #000;
+  font-size: 4em;
+  text-align: center;
+  margin: .5em 0 .25em;
+}
+
+h2 {
+  font-size: 2.75em;
+  margin: .25em 0 .5em;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2em;
+  margin: 1em 0;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.45em;
+  margin: 1em 0 2em;
+  text-align: center;
+}
+
+header {
+  background: #ff8240;
+  color: #fff;
+  height: 5em;
+}
+
+header img {
+  height: 5em;
+  padding: 1em;
+}
+
+main {
+  min-height: 60vh;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 2em 1em;
+}
+
+#app ul {
+  max-width: 75%;
+  margin: auto;
+  overflow: auto
+}
+
+#app li {
+  background-image: url('../images/cards/face-down.jpeg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  float: left;
+  margin: 1%;
+  width: 23%;
+}
+
+#app li img {
+  opacity: 0;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+}
+
+/*
+
+Notice these - I've made styles to show the image when the
+<li> elements have class "clicked" or "correct-guess".
+
+We can use this in our game, to add classes to the cards
+when they have been clicked on, or correctly guessed!
+
+*/
+
+#app li img.clicked {
+  opacity: 1;
+}
+
+#app li img.correct-guess {
+  opacity: 1;
+}
